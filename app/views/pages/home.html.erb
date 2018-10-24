@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.row {
+    padding-left: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+</style>
+</head>
+  <body>
+    <h1>This my Homework</h1>
+    <img src="https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5f2b17a0eaaf64a674354766bdba9f97&auto=format&fit=crop&w=1001&q=80" alt="Paris" style="width:40%; height: 60%;">
+
+  
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <h2>One part of the homework</h2>
+        <p>Some text about one part of the homework</p>
+      </div>
+      <div class="column" style="background-color:#bbb;">
+        <h2>Another part of the homework</h2>
+        <p>Some text about another part of the homework</p>
+      </div>
+    </div>
+  
+    <%= link_to 'About', about_path %>
+  
+    <footer>
+      <p>Footer</p>
+    </footer>
+  
+  </body>
+</html>
